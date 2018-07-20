@@ -1,7 +1,6 @@
 var express = require('express');
 var csv = require('csvtojson');
 var request = require('request')
-const sqlite3 = require('sqlite3').verbose();
 var router = express.Router();
 
 /* GET station info */
