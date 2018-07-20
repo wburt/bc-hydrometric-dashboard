@@ -5,7 +5,7 @@ var logger = require('morgan');
 
 var indexRouter = require('./routes/index');
 var dailyRouter = require('./routes/daily');
-var historicRouter = require('./routes/historic');
+//var historicRouter = require('./routes/historic');
 var hourlyRouter = require('./routes/hourly');
 var realtimeRouter = require('./routes/realtime');
 var app = express();
@@ -20,7 +20,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
-app.use('/historic', historicRouter);
+//app.use('/historic', historicRouter);
 app.use('/daily', dailyRouter);
 app.use('/hourly', hourlyRouter);
 app.use('/realtime', realtimeRouter);
